@@ -5,8 +5,8 @@
 // Words to display 
 // The words must have same number of letters
 // The words should be capitalized so they have the same height
-string_1 = "L♥VE";    // Seen from left side
-string_2 = "HATE";    // Seen from right side
+string_1 = "DAVID";    // Seen from left side
+string_2 = "BECKY";    // Seen from right side
 
 // Font information
 letter_size = 25;       // Height of letters (mm)
