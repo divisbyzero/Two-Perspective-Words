@@ -5,8 +5,8 @@
 // Words to display 
 // The words must have same number of letters
 // The words should be capitalized so they have the same height
-string_1 = "DAVID";    // Seen from left side
-string_2 = "BECKY";    // Seen from right side
+string_1 = "L♥VE";    // Seen from left side
+string_2 = "HATE";    // Seen from right side
 
 // Font information
 letter_size = 25;       // Height of letters (mm)
@@ -14,9 +14,11 @@ font_name = "Verdana:style=Bold";  // Font for letters
 round_letter_correction = 0.98;  // Scale round-top letters
 rounded_letters = ["O", "C", "G", "Q", "S"];  // Round-top capital letters that are slightly taller than the rest
 
-heart_font = "DejaVu Sans:style=Bold";  // Used only for ♥
-heart_scale = 1.42; // Scale ♥ relative to other letters
-heart_vertical_shift = -letter_size * 0.1; // Shift heart downward for a good connection
+special_char = "♥";                     // Character to treat specially
+special_font = "DejaVu Sans:style=Bold";    // Font for special character
+special_scale = 1.42;                   // Scale for special character
+special_vertical_shift = letter_size * (-0.1);  // Vertical shift for special character
+
 
 // Control appearance
 aspect_ratio = 1.1;
@@ -54,19 +56,20 @@ function compute_dimensions(letter_spacing, margin_x, margin_y, n_letters) =
 function round1(x) = round(x * 10) / 10;
 
 // Check if a letter needs rounded correction
-function needs_round_correction(letter) = letter_in_list(letter, rounded_letters);
+function needs_round_correction(letter) =
+    len([for (x = rounded_letters) if (x == letter) x]) > 0;
 
-function letter_in_list(l, lst) = 
-    [for (x = lst) x == l] != [] && ([for (x = lst) x == l][0]);
 
 // ================== MODULES ============================
 
 // Create a standing 3D letter centered and rotated
 module standing_letter(letter, angle) {
     correction = needs_round_correction(letter) ? round_letter_correction : 1.0;
-    selected_font = (letter == "♥") ? heart_font : font_name;
-    scale_factor = (letter == "♥") ? heart_scale : 1;
-    extra_shift = (letter == "♥") ? heart_vertical_shift : 0;
+    is_special = (letter == special_char);
+    selected_font = is_special ? special_font : font_name;
+    scale_factor = is_special ? special_scale : 1;
+    extra_shift = is_special ? special_vertical_shift : 0;
+
 
     rotate([0, 0, angle])
         translate([0, 0, extra_shift])  // ← correct place to shift vertically
