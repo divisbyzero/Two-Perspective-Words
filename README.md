@@ -20,10 +20,24 @@ This repository contains an OpenSCAD model for generating **two-view word sculpt
 - STL export-ready
 - Perfect for laser cutting, FDM or resin printing
 
+## Example Photos
+
+### Love / Hate Example
+
 <p align="center">
-  <!-- Add preview screenshots here -->
-  <img src="example1.jpeg" alt="Front view" width="400">
-  <img src="example2.jpeg" alt="Rear view" width="400">
+  <img src="LoveHate1.jpeg" alt="Love/Hate View 1" width="400">
+  <img src="LoveHate2.jpeg" alt="Love/Hate View 2" width="400">
+</p>
+<p align="center">
+  <img src="LoveHate3.jpeg" alt="Love/Hate View 3" width="400">
+  <img src="LoveHate4.jpeg" alt="Love/Hate View 4" width="400">
+</p>
+
+### Olivia / Ballet Example
+
+<p align="center">
+  <img src="OliviaBallet1.jpeg" alt="Olivia/Ballet View 1" width="400">
+  <img src="OliviaBallet2.jpeg" alt="Olivia/Ballet View 2" width="400">
 </p>
 
 ## STL Downloads
