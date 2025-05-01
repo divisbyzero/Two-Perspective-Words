@@ -3,13 +3,12 @@
 
 # Two-Perspective Words
 
-This repository contains an OpenSCAD model for generating **two-view word sculptures** — 3D designs that spell one word when viewed from the left and a different word when viewed from the right. These dual-perspective illusions make compelling gifts, conversation pieces, or educational demos in geometry and design.
+This repository contains an OpenSCAD model for generating **two-view word sculptures**—3D designs that spell one word when viewed from the left and a different word when viewed from the right. 
 
 ## Description
 
-- The model takes two words (of equal length) and creates a unified 3D sculpture.
-- One word is visible from a **-45° angle**, the other from **+225°**.
-- Each letter is extruded, centered on the Z-axis, and intersected with its rotated pair.
+- The model takes two words (of equal length) and creates a 3D object.
+- The words are visible from **45° angles** on each side.
 - A **rounded baseplate** supports the design for 3D printing stability.
 - Symbols like **♥** are supported with font switching and custom scaling.
 
@@ -18,11 +17,11 @@ This repository contains an OpenSCAD model for generating **two-view word sculpt
 - Fully customizable: font, height, spacing, scaling
 - Optional heart glyph scaling and Z-offset for durability
 - STL export-ready
-- Perfect for laser cutting, FDM or resin printing
+- Perfect for 3D printing
 
-## Example Photos
+## Examples
 
-### Love / Hate Example
+### L♥VE / HATE
 
 <p align="center">
   <img src="LoveHate1.jpeg" alt="Love/Hate View 1" width="400">
@@ -33,17 +32,16 @@ This repository contains an OpenSCAD model for generating **two-view word sculpt
   <img src="LoveHate4.jpeg" alt="Love/Hate View 4" width="400">
 </p>
 
-### Olivia / Ballet Example
+### OLIVIA / BALLET
 
 <p align="center">
   <img src="OliviaBallet1.jpeg" alt="Olivia/Ballet View 1" width="400">
   <img src="OliviaBallet2.jpeg" alt="Olivia/Ballet View 2" width="400">
 </p>
 
-## STL Downloads
+## STL Download
 
-- [`TwoPerspectiveWords.stl`](TwoPerspectiveWords.stl) — Dual-view model example
-- [`DavidBecky.stl`](DavidBecky.stl) — Personalized sculpture
+- [`LoveHate.stl`](LoveHate.stl) — L♥VE/HATE example
 
 ## How to Use
 
@@ -51,7 +49,7 @@ This repository contains an OpenSCAD model for generating **two-view word sculpt
 2. Set your desired word pair:
 
    ```openscad
-   string_1 = "LOVE";     // Viewed from the left
+   string_1 = "L♥VE";     // Viewed from the left
    string_2 = "HATE";     // Viewed from the right
    ```
 
@@ -61,12 +59,19 @@ This repository contains an OpenSCAD model for generating **two-view word sculpt
    - Set `include_baseplate = false;` to remove the base
 
 4. Render and export to `.stl` for 3D printing.
+## Printing Tips
+
+When printing this model on a standard desktop FDM (extrusion-based) printer, keep the following in mind:
+
+- **Supports are required** to successfully print the letters, which often have significant overhangs.
+- Removing supports can be challenging. The letters and the attachment points of the letters to the base are relatively small and delicate, so it is important to remove supports carefully to avoid damaging them.
+- To ensure durability, especially where letters intersect and connect to the baseplate, it is recommended to use a **high infill setting (e.g., 50%)**. This increases the strength of thin or intersecting parts and improves the overall robustness of the model.
+
 
 ## Files Included
 
 - `TwoPerspectiveWords.scad` — Parametric OpenSCAD model
-- `TwoPerspectiveWords.stl` — Example generated model
-- `DavidBecky.stl` — Personalized STL output example
+- `LoveHate.stl` — Love/Hate STL output
 
 ## License
 
