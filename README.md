@@ -35,19 +35,32 @@ This repository contains an OpenSCAD model for generating **two-view word sculpt
 ### L♥VE / HATE
 
 <p align="center">
-  <img src="LoveHate1.jpeg" alt="Love/Hate View 1" width="400">
-  <img src="LoveHate2.jpeg" alt="Love/Hate View 2" width="400">
+  <img src="images/LoveHate1.jpeg" alt="Love/Hate View 1" width="400">
+  <img src="images/LoveHate2.jpeg" alt="Love/Hate View 2" width="400">
 </p>
 <p align="center">
-  <img src="LoveHate3.jpeg" alt="Love/Hate View 3" width="400">
-  <img src="LoveHate4.jpeg" alt="Love/Hate View 4" width="400">
+  <img src="images/LoveHate3.jpeg" alt="Love/Hate View 3" width="400">
+  <img src="images/LoveHate4.jpeg" alt="Love/Hate View 4" width="400">
 </p>
+
+
+### DERIVATIVE / INTEGRAL
+
+<p align="center">
+  <img src="images/IntegralDerivative1.jpeg" alt="Love/Hate View 1" width="400">
+  <img src="images/IntegralDerivative2.jpeg" alt="Love/Hate View 2" width="400">
+</p>
+<p align="center">
+  <img src="images/IntegralDerivative3.jpeg" alt="Love/Hate View 3" width="400">
+</p>
+
+
 
 ### OLIVIA / BALLET
 
 <p align="center">
-  <img src="OliviaBallet1.jpeg" alt="Olivia/Ballet View 1" width="400">
-  <img src="OliviaBallet2.jpeg" alt="Olivia/Ballet View 2" width="400">
+  <img src="images/OliviaBallet1.jpeg" alt="Olivia/Ballet View 1" width="400">
+  <img src="images/OliviaBallet2.jpeg" alt="Olivia/Ballet View 2" width="400">
 </p>
 
 ## STL Downloads
