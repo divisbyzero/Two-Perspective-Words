@@ -1,5 +1,5 @@
-[![GitHub](https://img.shields.io/badge/OpenSCAD-View%20Source-blue?logo=openscad)](https://github.com/YOUR_USERNAME/YOUR_REPO)
-[![Download STL](https://img.shields.io/badge/Download-STL%20Files-orange?logo=3d-printing)](https://github.com/YOUR_USERNAME/YOUR_REPO/releases)
+[![GitHub](https://img.shields.io/badge/OpenSCAD-View%20Source-blue?logo=openscad)](https://github.com/divisbyzero/Two-Perspective-Words)
+[![Download STL](https://img.shields.io/badge/Download-STL%20Files-orange?logo=3d-printing)](https://github.com/divisbyzero/Two-Perspective-Words/releases)
 
 # Two-Perspective Words
 
